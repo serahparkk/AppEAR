@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.7.6,kivy==2.0.0,kivymd
+requirements = python3,kivy,kivymd
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -64,10 +64,10 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3.7.6
+osx.python_version = 3
 
 # Kivy version to use
-osx.kivy_version = 1.9.1
+osx.kivy_version = 2.0.0
 
 #
 # Android specific
@@ -283,7 +283,7 @@ fullscreen = 0
 
 # (list) The Android archs to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 # In past, was `android.arch` as we weren't supporting builds for multiple archs at the same time.
-android.archs = arm64-v8a, armeabi-v7a
+android.archs = arm64-v8a
 
 # (int) overrides automatic versionCode computation (used in build.gradle)
 # this is not the same as app version and should only be edited if you know what you're doing
@@ -318,10 +318,10 @@ android.allow_backup = True
 #p4a.url =
 
 # (str) python-for-android fork to use in case if p4a.url is not specified, defaults to upstream (kivy)
-#p4a.fork = kivy
+p4a.fork = kivy
 
 # (str) python-for-android branch to use, defaults to master
-#p4a.branch = master
+p4a.branch = develop
 
 # (str) python-for-android specific commit to use, defaults to HEAD, must be within p4a.branch
 #p4a.commit = HEAD
